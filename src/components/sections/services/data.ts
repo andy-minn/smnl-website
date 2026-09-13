@@ -1,59 +1,60 @@
-import img1 from "./assets/solar3.png";
-import img2 from "./assets/wind.png";
-// TODO
-import img3 from "./assets/hydro.png";
-import img4 from "./assets/storage.png";
-// TODO
-import img5 from "./assets/smart-grid.png";
-import img6 from "./assets/green.png";
+import img1 from "./assets/MDF-01.webp";
+import img2 from "./assets/Plywood-03.webp";
+import img3 from "./assets/BlockBoard-02.webp";
+import img4 from "./assets/rice-02.webp";
+import img5 from "./assets/Beans-01.webp";
+import img6 from "./assets/trade-hub-02.jpg";
 
 export const servicesSectionData = {
-  title: "Our Sustainable Energy Solutions",
+  title: "What We Trade",
+
   subheading: {
-    text1_1: "Experience a Revolution in Energy Solutions - ",
-    text1_2: "Embrace Innovation, Embrace Sustainability.",
+    text1_1: "Connecting trusted suppliers with customers across Asia - ",
+    text1_2: "from interior decoration materials to agricultural products.",
     text2:
-      "We're here to Empower Your Life and Spaces with Clean, Renewable Energy, Paving the Way for a Brighter and Greener Tomorrow.",
+      "We coordinate sourcing, product specifications, cross-border transactions and delivery to help our customers and suppliers trade with confidence.",
   },
+
   services: [
     {
-      title: "Solar Power Solutions",
+      title: "MDF Board",
       briefDescription:
-        "Harness the power of the sun with our state-of-the-art solar panels. Generate clean energy for your home or business and reduce your carbon footprint.",
+        "Sourced from trusted suppliers and supplied to customers in the interior decoration materials market.",
       visual: img1,
     },
     {
-      title: "Wind Energy Harvesting",
+      title: "Plywood",
       briefDescription:
-        "Embrace the power of the wind. Our wind energy solutions provide a sustainable and efficient way to generate electricity, ensuring a greener future.",
+        "Connecting reliable plywood suppliers with customers seeking consistent product specifications and supply.",
       visual: img2,
     },
     {
-      title: "Hydropower Systems",
+      title: "BlockBoard",
       briefDescription:
-        "Flow with nature. Our hydropower systems harness the energy of flowing water, delivering reliable and eco-friendly electricity to your doorstep.",
+        "Sourced and coordinated according to customer requirements for interior decoration and building applications.",
       visual: img3,
     },
     {
-      title: "Energy Storage Solutions",
+      title: "Rice",
       briefDescription:
-        "Store excess energy efficiently. Our cutting-edge energy storage solutions ensure uninterrupted power supply, even during cloudy days or low-wind periods.",
+        "Agricultural products sourced from Myanmar and coordinated for export to customers across regional markets.",
       visual: img4,
     },
     {
-      title: "Smart Grid Technology",
+      title: "Beans",
       briefDescription:
-        "Navigate the future with our smart grid technology. Optimize energy distribution, monitor consumption, and contribute to a more sustainable and efficient energy ecosystem.",
+        "Connecting agricultural suppliers in Myanmar with customers in international markets.",
       visual: img5,
     },
     {
-      title: "Energy-efficient Lighting",
+      title: "Trading Coordination",
       briefDescription:
-        "Illuminate your space responsibly. Our energy-efficient lighting solutions provide bright, sustainable, and cost-effective illumination for homes and businesses.",
+        "Supporting product specifications, payments, transportation and delivery coordination across borders.",
       visual: img6,
     },
   ],
+
   callToAction:
-    "Discover the Future of Green Energy. Choose Your Sustainable Solution Today!",
-  buttonText: "Explore More",
+    "Looking for a reliable trading partner across Asian markets?",
+  buttonText: "Explore Our Business",
 };

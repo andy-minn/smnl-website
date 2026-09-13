@@ -1,32 +1,31 @@
-import imgGrid from "./assets/inno-grid.webp";
-import imgSolar from "./assets/inno-panel.webp";
-import imgWind from "./assets/inno-wind.webp";
+import imgGrid from "./assets/decor-mat-02.jpg";
+import imgSolar from "./assets/rice-03.webp";
+import imgWind from "./assets/spore-03.webp";
 
 export const innovationsSection = {
-  title: "Latest Innovations",
-  subheading1_1: "Discover Our Cutting-edge",
-  subheading1_2: " Green Energy Technologies",
+  title: "Our Regional Reach",
+
+  subheading1_1: "Connecting Businesses",
+  subheading1_2: " Across Asian Markets",
+
   innovations: [
     {
-      title: "Smart Grid Integration",
+      title: "Interior Decoration Materials",
       description:
-        "Revolutionize energy distribution with our smart grid technology, optimizing efficiency, minimizing wastage, and adapting to demand fluctuations. Stay connected with innovative solutions for a sustainable, cost-effective energy ecosystem. Embrace the future with our cutting-edge smart grid integration, enhancing reliability and paving the way for efficiency and sustainability.",
+        "We source MDF Board, Plywood and BlockBoard from suppliers in Indonesia, Malaysia, Thailand and China, supplying customers in Myanmar according to their product requirements.",
       visual: imgGrid,
     },
     {
-      title: "Advanced Solar Panel Design",
+      title: "Agricultural Products",
       description:
-        "Boost solar efficiency with our state-of-the-art solar panel designs. Our innovative technologies capture more sunlight, ensuring maximum energy production for your home or business. Experience enhanced sustainability and increased energy output with our advanced solar solutions.",
+        "We source Rice and Beans from Myanmar and coordinate exports to customers in Indonesia, Malaysia, the Philippines and India.",
       visual: imgSolar,
     },
     {
-      title: "Next-gen Wind Turbines",
+      title: "Singapore Trading Hub",
       description:
-        "Transform your wind energy experience with our next-generation wind turbines. Our sleek design, enhanced efficiency, and minimal environmental impact underscore our commitment to innovation. Elevate your sustainable energy journey with cutting-edge wind solutions that prioritize both performance and environmental responsibility.",
+        "From Singapore, we coordinate supplier and customer relationships, product specifications, cross-border payments, transportation and delivery to help keep international transactions running smoothly.",
       visual: imgWind,
     },
   ],
-  visual: "innovations-section-image.jpg",
-  callToAction: "Explore the Future of Green Energy with [Company Name]",
-  button: "Learn More",
 };
