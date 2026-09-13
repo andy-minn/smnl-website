@@ -9,9 +9,10 @@ export interface Props {
   title: string;
   description: string;
   visual: ImageMetadata;
+  imageAlt: string;
 }
 
-const { title, description, visual } = Astro.props;
+const { title, description, visual, imageAlt } = Astro.props;
 const animation = `duration-300 ease-linear`;
 ---
 
@@ -21,7 +22,7 @@ const animation = `duration-300 ease-linear`;
   `>
   <LazyImage
     src={visual}
-    alt="Hero"
+    alt={imageAlt}
     height="400"
     class=`
     w-full h-96 object-cover
@@ -30,7 +31,7 @@ const animation = `duration-300 ease-linear`;
   />
   <!-- <Image
     src={visual}
-    alt="Hero"
+    alt={imageAlt}
     width="2350"
     height="2359"
     class=`
