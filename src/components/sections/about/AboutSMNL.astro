@@ -1,0 +1,67 @@
+---
+import Container from "../../shared/Container.astro";
+import GradiantText from "../../shared/GradiantText.astro";
+import Paragraph from "../../shared/Paragraph.astro";
+import SubTitle2 from "../../shared/SubTitle2.astro";
+import Title2 from "../../shared/Title2.astro";
+import Title3 from "../../shared/Title3.astro";
+import { aboutSMNLSection } from "./data.ts";
+
+export interface Props {
+  className?: string;
+}
+
+const { className } = Astro.props;
+---
+
+<section id="about" class=`${className}`>
+  <Container
+    className="mx-auto flex flex-col items-center justify-center text-center"
+  >
+    <Title2>{aboutSMNLSection.title}</Title2>
+
+    <SubTitle2>
+      {aboutSMNLSection.subheading1_1}
+      <GradiantText>{aboutSMNLSection.subheading1_2}</GradiantText>
+    </SubTitle2>
+
+    <Paragraph className="max-w-3xl mt-6">
+      {aboutSMNLSection.description}
+    </Paragraph>
+  </Container>
+
+  <Container className="mt-12">
+    <div class="grid lg:grid-cols-2 gap-8 lg:gap-12">
+      <div class="rounded-xl p-8 bg-box-bg ring-1 ring-black/5">
+        <Title3>{aboutSMNLSection.whatWeDo.title}</Title3>
+
+        <Paragraph className="mt-4">
+          {aboutSMNLSection.whatWeDo.description}
+        </Paragraph>
+      </div>
+
+      <div class="rounded-xl p-8 bg-box-bg ring-1 ring-black/5">
+        <Title3>{aboutSMNLSection.howWeAddValue.title}</Title3>
+
+        <div class="mt-6 space-y-6">
+          {
+            aboutSMNLSection.howWeAddValue.points.map((point) => (
+              <div>
+                <Title3>{point.title}</Title3>
+                <Paragraph className="mt-2">
+                  {point.description}
+                </Paragraph>
+              </div>
+            ))
+          }
+        </div>
+      </div>
+    </div>
+
+    <div class="max-w-3xl mx-auto mt-10 text-center">
+      <Paragraph className="font-medium">
+        {aboutSMNLSection.closingStatement}
+      </Paragraph>
+    </div>
+  </Container>
+</section>

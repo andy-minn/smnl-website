@@ -1,0 +1,173 @@
+---
+import Button from "../../../shared/Button.astro";
+---
+
+<div
+  id="business-enquiry-form"
+  class="w-full max-w-3xl mx-auto rounded-2xl border border-box-border bg-box-bg p-6 sm:p-8 shadow-lg"
+>
+  <div class="mb-8 text-center">
+    <h3 class="text-2xl font-semibold text-heading-1">
+      Business Enquiry
+    </h3>
+
+    <p class="mt-2 text-sm text-heading-3 opacity-70">
+      Tell us about your trading requirements and we will get in touch.
+    </p>
+  </div>
+
+  <form action="#" method="POST" class="space-y-6">
+
+    <!-- Name / Company -->
+    <div class="grid gap-6 sm:grid-cols-2">
+
+      <div>
+        <label
+          for="name"
+          class="mb-2 block text-sm font-medium text-heading-1"
+        >
+          Full Name <span class="text-primary">*</span>
+        </label>
+
+        <input
+          type="text"
+          id="name"
+          name="name"
+          required
+          autocomplete="name"
+          placeholder="Your name"
+          class="w-full rounded-lg border border-box-border bg-body px-4 py-3 text-heading-1 outline-none transition focus:border-primary focus:ring-1 focus:ring-primary"
+        />
+      </div>
+
+      <div>
+        <label
+          for="company"
+          class="mb-2 block text-sm font-medium text-heading-1"
+        >
+          Company Name
+        </label>
+
+        <input
+          type="text"
+          id="company"
+          name="company"
+          autocomplete="organization"
+          placeholder="Your company"
+          class="w-full rounded-lg border border-box-border bg-body px-4 py-3 text-heading-1 outline-none transition focus:border-primary focus:ring-1 focus:ring-primary"
+        />
+      </div>
+
+    </div>
+
+    <!-- Email / Phone -->
+    <div class="grid gap-6 sm:grid-cols-2">
+
+      <div>
+        <label
+          for="email"
+          class="mb-2 block text-sm font-medium text-heading-1"
+        >
+          Email Address <span class="text-primary">*</span>
+        </label>
+
+        <input
+          type="email"
+          id="email"
+          name="email"
+          required
+          autocomplete="email"
+          placeholder="you@company.com"
+          class="w-full rounded-lg border border-box-border bg-body px-4 py-3 text-heading-1 outline-none transition focus:border-primary focus:ring-1 focus:ring-primary"
+        />
+      </div>
+
+      <div>
+        <label
+          for="phone"
+          class="mb-2 block text-sm font-medium text-heading-1"
+        >
+          Phone / WhatsApp
+        </label>
+
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          autocomplete="tel"
+          placeholder="+65 ..."
+          class="w-full rounded-lg border border-box-border bg-body px-4 py-3 text-heading-1 outline-none transition focus:border-primary focus:ring-1 focus:ring-primary"
+        />
+      </div>
+
+    </div>
+
+    <!-- Enquiry Type -->
+    <div>
+      <label
+        for="enquiry-type"
+        class="mb-2 block text-sm font-medium text-heading-1"
+      >
+        What are you looking for? <span class="text-primary">*</span>
+      </label>
+
+      <select
+        id="enquiry-type"
+        name="enquiry-type"
+        required
+        class="w-full rounded-lg border border-box-border bg-body px-4 py-3 text-heading-1 outline-none transition focus:border-primary focus:ring-1 focus:ring-primary"
+      >
+        <option value="" disabled selected>
+          Select an enquiry type
+        </option>
+        <option value="interior-decoration-materials">
+          Interior Decoration Materials
+        </option>
+        <option value="agricultural-products">
+          Agricultural Products
+        </option>
+        <option value="sourcing-opportunity">
+          Sourcing Opportunity
+        </option>
+        <option value="trading-partnership">
+          Trading Partnership
+        </option>
+        <option value="other">
+          Other
+        </option>
+      </select>
+    </div>
+
+    <!-- Message -->
+    <div>
+      <label
+        for="message"
+        class="mb-2 block text-sm font-medium text-heading-1"
+      >
+        Message / Requirements <span class="text-primary">*</span>
+      </label>
+
+      <textarea
+        id="message"
+        name="message"
+        required
+        rows="6"
+        placeholder="Please tell us about your products, specifications, quantity, destination or other requirements."
+        class="w-full resize-y rounded-lg border border-box-border bg-body px-4 py-3 text-heading-1 outline-none transition focus:border-primary focus:ring-1 focus:ring-primary"
+      ></textarea>
+    </div>
+
+    <!-- Submit -->
+    <div class="flex justify-center pt-2">
+      <Button
+        color="cta"
+        variant="solid"
+        className="min-w-[180px]"
+        type="submit"
+      >
+        Submit Enquiry
+      </Button>
+    </div>
+
+  </form>
+</div>

@@ -23,12 +23,8 @@ const navItems = [
     text: "How We Work",
   },
   {
-    href: "#trust-relationships",
-    text: "Trust & Relationships",
-  },
-  {
-    href: "#cta",
-    text: "Contact",
+    href: "#about",
+    text: "About",
   },
 ];
 ---
@@ -68,15 +64,16 @@ const navItems = [
         }
       </ul>
 
+      <!-- Contact Us CTA -->
       <div
         class="lg:min-w-max flex items-center sm:w-max w-full pb-6 lg:pb-0 border-b border-box-bg lg:border-0 px-6 lg:px-0"
       >
-        <BtnLink
-          text="Contact Us"
+        <a
           href="#cta"
-          className="flex justify-center w-full sm:w-max text-lg text-heading-2"
-          variant="cta"
-        />
+          class="inline-flex items-center justify-center w-full sm:w-max min-w-max rounded-lg px-6 py-3 border border-transparent bg-primary-500 text-white font-semibold text-lg outline-none relative overflow-hidden duration-300 ease-linear hover:bg-primary-600 active:bg-primary-700"
+        >
+          Contact Us
+        </a>
       </div>
     </div>
 

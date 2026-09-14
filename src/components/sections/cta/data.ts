@@ -10,8 +10,19 @@ export const getInvolvedSection = {
   subheading1_2: "Trading Requirements",
 
   description:
-    "Whether you are looking for interior decoration materials or agricultural products, get in touch with us to discuss your sourcing and trading requirements.",
+    "Whether you are looking for products, sourcing opportunities, or a reliable trading partner across Asia, get in touch with us.",
 
-  callToAction: "Start a Conversation",
-  button: "Contact Us",
+  email: "Email",
+  phone: "Phone",
+  whatsapp: "WhatsApp",
+  enquiry: "Business Enquiry Form",
+
+  emailAddress: "inquiry@sinmanayla.com",
+  phoneNumber: "+65 6269 7381",
+  whatsappNumber: "+65 8118 9628",
+
+  location: "Singapore",
+  addressLine1: "27 Penjuru Lane",
+  addressLine2: "Annex Block #06-00",
+  addressLine3: "Singapore 609195",
 };

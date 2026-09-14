@@ -3,9 +3,8 @@ import Container from "../../shared/Container.astro";
 import GradiantText from "../../shared/GradiantText.astro";
 import SubTitle2 from "../../shared/SubTitle2.astro";
 import Title2 from "../../shared/Title2.astro";
-import EmailForm from "./components/EmailForm.astro";
-import Paragraph from "../../shared/Paragraph.astro";
 import { getInvolvedSection } from "./data.ts";
+import BusinessEnquiryForm from "./components/BusinessEnquiryForm.astro";
 
 export interface Props {
   className?: string;
@@ -25,14 +24,95 @@ const { className } = Astro.props;
       {getInvolvedSection.subheading1_2}
     </SubTitle2>
 
-    <Paragraph className="max-w-2xl mt-6">
+    <p class="mt-6 max-w-3xl text-heading-3">
       {getInvolvedSection.description}
-    </Paragraph>
+    </p>
   </Container>
 
-  <Container>
-    <div class="flex justify-center">
-      <EmailForm />
+  <Container className="mt-10">
+    <!-- Contact Buttons -->
+    <div class="flex flex-wrap justify-center gap-4">
+      <!-- Phone -->
+      <a
+        href={`tel:${getInvolvedSection.phoneNumber.replace(/\s/g, "")}`}
+        class="inline-flex items-center justify-center rounded-lg border border-primary px-6 py-3 font-semibold text-primary transition hover:bg-primary hover:text-white"
+      >
+        {getInvolvedSection.phone}
+      </a>
+
+      <!-- WhatsApp -->
+      <a
+        href={`https://wa.me/${getInvolvedSection.whatsappNumber.replace(/\s/g, "").replace("+", "")}`}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="inline-flex items-center justify-center rounded-lg border border-primary px-6 py-3 font-semibold text-primary transition hover:bg-primary hover:text-white"
+      >
+        {getInvolvedSection.whatsapp}
+      </a>
+
+      <!-- Email -->
+      <a
+        href={`mailto:${getInvolvedSection.emailAddress}`}
+        class="inline-flex items-center justify-center rounded-lg border border-primary px-6 py-3 font-semibold text-primary transition hover:bg-primary hover:text-white"
+      >
+        {getInvolvedSection.email}
+      </a>
+
+      <!-- Address / Google Maps -->
+      <a
+        href="https://www.google.com/maps/search/?api=1&query=27+Penjuru+Lane+Singapore+609195"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="inline-flex items-center justify-center rounded-lg border border-primary px-6 py-3 font-semibold text-primary transition hover:bg-primary hover:text-white"
+      >
+        Address
+      </a>
+    </div>
+
+    <!-- Business Enquiry Form Button -->
+    <div class="mt-6 flex justify-center">
+      <button
+        id="business-enquiry-toggle"
+        type="button"
+        class="rounded-lg outline-none relative overflow-hidden px-6 py-3 border duration-300 ease-linear border-transparent bg-primary-500 hover:bg-primary-600 active:bg-primary-700 disabled:bg-primary-200 text-accent disabled:text-primary-700 min-w-max"
+        aria-expanded="false"
+        aria-controls="business-enquiry"
+      >
+        <span
+          class="flex relative z-[5] font-medium text-lg font-semibold tracking-wide text-accent-light"
+        >
+          {getInvolvedSection.enquiry}
+        </span>
+      </button>
     </div>
   </Container>
+
+  <!-- Business Enquiry Form -->
+  <div id="business-enquiry" class="hidden pt-12">
+    <Container>
+      <BusinessEnquiryForm />
+    </Container>
+  </div>
 </section>
+
+<script>
+  const toggleButton = document.getElementById("business-enquiry-toggle");
+  const enquiryForm = document.getElementById("business-enquiry");
+
+  if (toggleButton && enquiryForm) {
+    toggleButton.addEventListener("click", () => {
+      const isHidden = enquiryForm.classList.contains("hidden");
+
+      enquiryForm.classList.toggle("hidden");
+
+      toggleButton.setAttribute("aria-expanded", String(isHidden));
+
+      if (isHidden) {
+        enquiryForm.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+      }
+    });
+  }
+</script>
