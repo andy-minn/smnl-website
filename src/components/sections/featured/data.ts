@@ -1,7 +1,3 @@
-import img1 from "./assets/solar-person.png";
-import img2 from "./assets/wind-person.png";
-import img3 from "./assets/amazonas2.png";
-
 export const projectsSection = {
   title: "How We Work",
   subheading1_1: "From Sourcing to Delivery, ",

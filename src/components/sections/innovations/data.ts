@@ -1,4 +1,4 @@
-import imgGrid from "./assets/decor-mat-02.jpg";
+import imgGrid from "./assets/decor-mat-02.webp";
 import imgSolar from "./assets/rice-03.webp";
 import imgWind from "./assets/spore-03.webp";
 

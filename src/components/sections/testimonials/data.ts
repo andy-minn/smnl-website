@@ -1,6 +1,6 @@
-import img1 from "./assets/person1.png";
-import img2 from "./assets/person2.png";
-import img3 from "./assets/person3.png";
+import img1 from "./assets/person1.webp";
+import img2 from "./assets/person2.webp";
+import img3 from "./assets/person3.webp";
 
 export const testimonialsSection = {
   title: "What Our Customers Say",
@@ -29,7 +29,4 @@ export const testimonialsSection = {
         "I'm passionate about the environment, and [Company Name] aligns perfectly with my values. Their commitment to renewable energy and reducing carbon footprint is commendable.",
     },
   ],
-  visual: "customer-testimonials-image.jpg",
-  callToAction: "Join Our Growing Community of Satisfied Customers",
-  button: "Get Started",
 };

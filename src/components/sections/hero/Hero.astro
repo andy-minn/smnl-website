@@ -1,6 +1,6 @@
 ---
 import { Image, Picture } from "astro:assets";
-import heroImg from "./assets/markets-02.jpg";
+import heroImg from "./assets/markets-02.webp";
 import CtaButton from "../../shared/CtaButton.astro";
 import GradiantText from "../../shared/GradiantText.astro";
 import SubTitle from "../../shared/SubTitle.astro";
@@ -16,7 +16,6 @@ const heroSection = {
   subheading2: "with customers across Asia",
   subheading3: "through international trade.",
   buttonText: "Explore Our Business",
-  backgroundImage: "hero-background-image.jpg",
 };
 
 export interface Props {
@@ -26,10 +25,10 @@ export interface Props {
 const { className = "" } = Astro.props;
 ---
 
-<section class=`relative  ${className} w-full h-[80vh]` id="hero">
-  <div class="w-full h-[80vh] pt-[100px]">
+<section class=`relative ${className} w-full h-auto md:h-[80vh]` id="hero">
+  <div class="w-full h-auto md:h-[80vh] pt-[100px]">
     <div
-      class="w-full h-full grid grid-cols-1 md:grid-cols-2 justify-end bg-base-100 dark:bg-base-dark-900"
+      class="w-full h-auto md:h-full grid grid-cols-1 md:grid-cols-2 justify-end bg-base-100 dark:bg-base-dark-900"
     >
       <div class="justify-center flex flex-col text-center md:ml-auto">
         <Title className="">
@@ -40,28 +39,37 @@ const { className = "" } = Astro.props;
             {" " + heroSection.headline3}
           </GradiantText>{heroSection.headline4}
         </Title>
-        <SubTitle className=" mt-10 leading-9">
+
+        <SubTitle className="mt-10 leading-9">
           {heroSection.subheading1}
           <br />
           {heroSection.subheading2}<br />
           {heroSection.subheading3}
         </SubTitle>
+
         <div class="pt-10">
-          <CtaButton>{heroSection.buttonText}</CtaButton>
+          <a
+            href="#services"
+            class="inline-flex items-center justify-center min-w-max rounded-lg px-6 py-3 border border-transparent bg-primary-500 text-white font-medium text-lg outline-none relative overflow-hidden duration-300 ease-linear hover:bg-primary-600 active:bg-primary-700"
+          >
+            {heroSection.buttonText}
+          </a>
         </div>
       </div>
-      <div class="flex relative pt-10 md:p-0">
+
+      <div class="flex relative pt-10 md:p-0 h-[420px] md:h-full w-screen md:w-auto">
         <LazyImage
           src={heroImg}
           alt="Container ships and port infrastructure supporting international trade"
-          className="w-full h-full object-cover"
+          className="w-screen max-w-none h-full object-cover md:w-full"
         />
+
         <svg
-          class="fill-base-100 dark:fill-base-dark-900 z-10 absolute top-0 start-0 h-full hidden md:block"
+          class="fill-base-100 dark:fill-base-dark-900 z-10 absolute top-[-1px] start-[-1px] h-full hidden md:block"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 500 400"
         >
-          <path d="M0 0l0 400L100 0Z"> </path>
+          <path d="M0 0l0 400L100 0Z"></path>
         </svg>
       </div>
     </div>

@@ -1,8 +1,3 @@
-import svg1 from "./assets/green-1.svg?raw";
-import svg2 from "./assets/green-2.svg?raw";
-import svg3 from "./assets/green-3.svg?raw";
-import svg4 from "./assets/green-4.svg?raw";
-
 export const getInvolvedSection = {
   title: "Let's Work Together",
 
@@ -12,9 +7,9 @@ export const getInvolvedSection = {
   description:
     "Whether you are looking for products, sourcing opportunities, or a reliable trading partner across Asia, get in touch with us.",
 
-  email: "Email",
-  phone: "Phone",
-  whatsapp: "WhatsApp",
+  email: "Email Us",
+  phone: "Call Us",
+  whatsapp: "WhatsApp Us",
   enquiry: "Business Enquiry Form",
 
   emailAddress: "inquiry@sinmanayla.com",

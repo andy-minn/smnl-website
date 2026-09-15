@@ -3,7 +3,7 @@ import img2 from "./assets/Plywood-03.webp";
 import img3 from "./assets/BlockBoard-02.webp";
 import img4 from "./assets/rice-02.webp";
 import img5 from "./assets/Beans-01.webp";
-import img6 from "./assets/trade-hub-02.jpg";
+import img6 from "./assets/trade-hub-02.webp";
 
 export const servicesSectionData = {
   title: "What We Trade",

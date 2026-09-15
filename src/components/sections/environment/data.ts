@@ -1,4 +1,4 @@
-import img from "./assets/Trade-hub-01.jpg";
+import img from "./assets/trade-hub-01.webp";
 
 export const environmentalImpactSection = {
   title: "Singapore Trading Hub",
