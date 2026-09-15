@@ -1,5 +1,5 @@
 export const trustSection = {
-  title: "Trust & Relationships",
+  title: "Built on Trust",
 
   subheading1_1: "Building business through ",
   subheading1_2: "trusted relationships and clear coordination.",

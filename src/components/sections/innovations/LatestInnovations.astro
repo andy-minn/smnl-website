@@ -33,10 +33,10 @@ const { className } = Astro.props;
         const bgColor = "";
         return (
           <div class={`w-100 ${bgColor}  pb-32`}>
-            <div
-              class={`flex flex-col gap-10 lg:gap-12 ${flexRow} mx-auto max-w-7xl w-full`}
-            >
-              <div class="max-w-md mx-auto midmd:max-w-none lg:mx-0 lg:pr-10 xl:pr-2  flex w-11/12 midmd:w-5/12 lg:w-1/2 midmd:h-auto">
+            <div class={`flex flex-col gap-10 lg:gap-12 ${flexRow} mx-auto max-w-7xl w-full`}>
+              <!-- PICTURE -->
+              <!-- <div class="max-w-md mx-auto midmd:max-w-none lg:mx-0 lg:pr-10 xl:pr-2  flex w-11/12 midmd:w-5/12 lg:w-1/2 midmd:h-auto"> -->
+              <div class="w-full lg:w-1/2">
                 <div class="w-full max-h-[50vh] sm:h-96 midmd:h-full relative">
                   <LazyImage
                     src={solution.visual}
@@ -46,7 +46,9 @@ const { className } = Astro.props;
                   />
                 </div>
               </div>
-              <div class="max-w-md mx-auto w-11/12 flex-1 flex midmd:w-7/12 lg:w-1/2 flex-col">
+              <!-- TEXT -->
+              <!-- <div class="max-w-md mx-auto w-11/12 flex-1 flex midmd:w-7/12 lg:w-1/2 flex-col"> -->
+              <div class="w-full flex flex-col lg:w-1/2">
                 <Title3>{solution.title}</Title3>
                 <Paragraph className="mt-3 ">{solution.description}</Paragraph>
               </div>
