@@ -3,9 +3,10 @@ export interface Props {
   className?: string;
   color: "primary" | "secondary" | "cta";
   variant: "solid" | "outline" | "gradient";
+  type?: "button" | "submit" | "reset";
 }
 
-const { className = "", color = "primary", variant = "solid" } = Astro.props;
+const { className = "", color = "primary", variant = "solid", type = "button" } = Astro.props;
 
 const getVariantStyle = (
   variant: "solid" | "outline" | "gradient" = "solid",
@@ -62,6 +63,7 @@ const animation = `duration-300 ease-linear`;
 ---
 
 <button
+  type={type}
   class={`
    ${base} 
     ${animation}
