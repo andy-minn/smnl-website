@@ -5,7 +5,7 @@ export const getInvolvedSection = {
   subheading1_2: "Trading Requirements",
 
   description:
-    "Whether you are looking for products, sourcing opportunities, or a reliable trading partner across Asia, get in touch with us.",
+    "Whether you are looking for products, sourcing opportunities, or a trading partner across Asia, get in touch with us.",
 
   email: "Email Us",
   phone: "Call Us",

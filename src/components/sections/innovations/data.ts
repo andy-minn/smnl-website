@@ -11,21 +11,27 @@ export const innovationsSection = {
   innovations: [
     {
       title: "Interior Decoration Materials",
-      description: "We source MDF Board, Plywood and BlockBoard from suppliers in Indonesia, Malaysia, Thailand and China, supplying customers in Myanmar according to their product requirements.",
+      description:
+        "We source MDF Board, Plywood and BlockBoard from suppliers in Indonesia, Malaysia, Thailand and China for customers in Myanmar, according to their product requirements.",
       visual: imgGrid,
-      imageAlt: "Interior decoration materials including MDF Board, Plywood and BlockBoard",
+      imageAlt:
+        "Interior decoration materials including MDF Board, Plywood and BlockBoard",
     },
     {
       title: "Agricultural Products",
-      description: "We source Rice and Beans from Myanmar and coordinate exports to customers in Indonesia, Malaysia, the Philippines and India.",
+      description:
+        "We source Rice and Beans from Myanmar and coordinate exports to customers in Indonesia, Malaysia, the Philippines and India.",
       visual: imgSolar,
-      imageAlt: "Agricultural commodities including rice and beans prepared for regional trade",
+      imageAlt:
+        "Agricultural commodities including rice and beans prepared for regional trade",
     },
     {
       title: "Singapore Trading Hub",
-      description: "From Singapore, we coordinate supplier and customer relationships, product specifications, cross-border payments, transportation and delivery to help keep international transactions running smoothly.",
+      description:
+        "From Singapore, we coordinate supplier and customer relationships, product specifications, cross-border payments, transportation and delivery to help keep cross-border transactions running smoothly.",
       visual: imgWind,
-      imageAlt: "Singapore port and shipping infrastructure supporting international trade",
+      imageAlt:
+        "Singapore port and shipping infrastructure supporting international trade",
     },
   ],
 };

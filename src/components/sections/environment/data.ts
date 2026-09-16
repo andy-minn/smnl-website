@@ -3,8 +3,8 @@ import img from "./assets/trade-hub-05.webp";
 export const environmentalImpactSection = {
   title: "Singapore Trading Hub",
 
-  subheading1_1: "Connecting Asian markets through our ",
-  subheading1_2: "Singapore trading hub",
+  subheading1_1: "Connecting Asian markets ",
+  subheading1_2: "through Singapore",
 
   description:
     "From Singapore, we support cross-border trading by coordinating suppliers, customers, payments, transportation and delivery across our regional markets.",

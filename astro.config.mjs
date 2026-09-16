@@ -4,7 +4,7 @@ import tailwind from "@astrojs/tailwind";
 // https://astro.build/config
 export default defineConfig({
   integrations: [tailwind()],
-  site: "https://energy-template.vbartalis.dev",
+  site: "https://www.sinmanayla.com",
   output: "static",
   trailingSlash: "ignore",
 });

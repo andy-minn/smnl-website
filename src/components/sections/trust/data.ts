@@ -16,7 +16,7 @@ export const trustSection = {
       number: "02",
       title: "Clear Communication",
       description:
-        "We keep requirements, specifications and transaction details clear between the parties involved.",
+        "We keep requirements, specifications and transaction details clear between suppliers and customers.",
     },
 
     {

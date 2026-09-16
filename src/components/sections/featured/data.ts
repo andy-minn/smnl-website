@@ -3,41 +3,39 @@ export const projectsSection = {
   subheading1_1: "From Sourcing to Delivery, ",
   subheading1_2: "We Coordinate Every Step.",
   projects: [
-  {
-  number: "01",
-  title: "Understand",
-  description:
-  "Understand customer requirements, product needs and specifications.",
-  },
+    {
+      number: "01",
+      title: "Understand",
+      description:
+        "Identify customer requirements, product needs and specifications.",
+    },
 
-  {
-    number: "02",
-    title: "Source",
-    description:
-      "Connect with suitable suppliers based on customer requirements.",
-  },
+    {
+      number: "02",
+      title: "Source",
+      description:
+        "Connect with suitable suppliers based on customer requirements.",
+    },
 
-  {
-    number: "03",
-    title: "Verify",
-    description:
-      "Check product specifications against customer requirements.",
-  },
+    {
+      number: "03",
+      title: "Verify",
+      description:
+        "Check product specifications against customer requirements.",
+    },
 
-  {
-    number: "04",
-    title: "Coordinate",
-    description:
-      "Coordinate payments, transportation, shipment arrangements and delivery.",
-  },
+    {
+      number: "04",
+      title: "Coordinate",
+      description:
+        "Coordinate cross-border payments, transportation, shipment arrangements and delivery.",
+    },
 
-  {
-    number: "05",
-    title: "Deliver",
-    description:
-      "Support the transaction through delivery and completion.",
-  },
-
+    {
+      number: "05",
+      title: "Deliver",
+      description: "Support the transaction through delivery and completion.",
+    },
   ],
   callToAction: "",
   button: "",

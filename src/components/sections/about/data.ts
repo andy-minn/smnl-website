@@ -5,12 +5,12 @@ export const aboutSMNLSection = {
   subheading1_2: "Trusted International Trade",
 
   description:
-    "We, Sinma Nayla Pte Ltd is a Singapore-based international trading company connecting trusted suppliers and customers across Asia. We facilitate the sourcing and movement of interior decoration materials and agricultural products across international markets.",
+    "Sinma Nayla Pte Ltd is a Singapore-based international trading company connecting trusted suppliers and customers across Asia. We facilitate the sourcing and movement of interior decoration materials and agricultural products across international markets.",
 
   whatWeDo: {
     title: "What We Do",
     description:
-      "We connect the right suppliers with the right customers, coordinating the key steps that make cross-border trade work smoothly. From sourcing and product specification checking to payment, shipment and delivery coordination, we help ensure that transactions are handled with care and according to customer requirements.",
+      "We connect the right suppliers with the right customers, coordinating the key steps that make cross-border trade work smoothly. From sourcing and product specification checking to cross-border payment, shipment and delivery coordination, we help ensure that transactions are handled with care and according to customer requirements.",
   },
 
   howWeAddValue: {
@@ -36,5 +36,5 @@ export const aboutSMNLSection = {
   },
 
   closingStatement:
-    "Built on relationships, reliability and professional coordination, Sinma Nayla helps businesses move confidently across borders.",
+    "Built on trusted relationships and professional coordination, Sinma Nayla helps businesses connect and trade across borders with confidence.",
 };
