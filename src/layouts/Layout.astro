@@ -13,12 +13,9 @@ const { title } = Astro.props;
   <head>
     <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="generator" content={Astro.generator} />
-    <meta
-      name="description"
-      content="Sinma Nayla website made with ASTROJS and TAILWINDCSS"
-    />
+    <meta name="description" content="Sinma Nayla - Connecting Markets" />
     <title>Sinma Nayla - {title}</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"
@@ -37,7 +34,7 @@ const { title } = Astro.props;
     detectSystemTheme();
 
     const switchTheme = document.querySelector(
-      "[data-switch-theme]"
+      "[data-switch-theme]",
     ) as HTMLButtonElement;
     switchTheme.addEventListener("click", (e) => {
       e.preventDefault();
@@ -92,11 +89,11 @@ const { title } = Astro.props;
   </script>
   <script>
     const toggleMenu = document.querySelector(
-      "[data-toggle-nav]"
+      "[data-toggle-nav]",
     ) as HTMLButtonElement;
     const navbar = document.querySelector("[data-navbar]") as HTMLDivElement;
     const overlayNav = document.querySelector(
-      "[data-nav-overlay]"
+      "[data-nav-overlay]",
     ) as HTMLDivElement;
     if (toggleMenu) {
       toggleMenu.addEventListener("click", (e) => {

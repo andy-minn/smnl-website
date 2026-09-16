@@ -14,7 +14,7 @@ export interface Props {
 const { className } = Astro.props;
 ---
 
-<section id="trading-hub" class=`${className}`>
+<section id="trading-hub" class=`scroll-mt-24 ${className}`>
   <Container>
     <Title2>{environmentalImpactSection.title}</Title2>
   </Container>
@@ -45,7 +45,7 @@ const { className } = Astro.props;
       <div class="pt-10">
         <a
           href="#cta"
-          class="inline-flex items-center justify-center min-w-max rounded-lg px-6 py-3 border border-transparent bg-primary-500 text-white font-medium text-lg outline-none relative overflow-hidden duration-300 ease-linear hover:bg-primary-600 active:bg-primary-700"
+          class="scroll-mt-24 inline-flex items-center justify-center min-w-max rounded-lg px-6 py-3 border border-transparent bg-primary-500 text-white font-medium text-lg outline-none relative overflow-hidden duration-300 ease-linear hover:bg-primary-600 active:bg-primary-700"
         >
           {environmentalImpactSection.button}
         </a>
@@ -55,7 +55,7 @@ const { className } = Astro.props;
     <div class="w-full lg:w-1/2">
       <LazyImage
         src={environmentalImpactSection.visual}
-        alt="environmental impact"
+        alt="Singapore seaport trading hub"
         width="700"
         class="block w-full h-full object-cover rounded-2xl"
       />

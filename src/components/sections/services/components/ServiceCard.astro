@@ -1,7 +1,4 @@
 ---
-import Paragraph from "../../../shared/Paragraph.astro";
-import { Image } from "astro:assets";
-import Title2 from "../../../shared/Title2.astro";
 import Title3 from "../../../shared/Title3.astro";
 import LazyImage from "../../../shared/LazyImage.astro";
 
@@ -16,54 +13,52 @@ const { title, description, visual, imageAlt } = Astro.props;
 const animation = `duration-300 ease-linear`;
 ---
 
-<div class=`
-  ${animation} group
-  relative overflow-hidden rounded-lg h-full
-  `>
+<div
+  class={`
+    ${animation} group
+    relative h-full overflow-hidden rounded-lg
+  `}
+>
   <LazyImage
     src={visual}
     alt={imageAlt}
     height="400"
-    class=`
-    w-full h-96 object-cover
-    ${animation} group-hover:scale-125
-    `
+    class={`
+      h-96 w-full object-cover
+      ${animation} group-hover:scale-125
+    `}
   />
-  <!-- <Image
-    src={visual}
-    alt={imageAlt}
-    width="2350"
-    height="2359"
-    class=`
-    w-full h-96 object-cover
-    ${animation} group-hover:scale-125
-    `
-  /> -->
+
   <div
-    class=`
-  absolute top-0 h-full w-full bg-gradi
-  bg-gradient-to-b from-black/10 to-black/30 
-  ${animation} group-hover:bg-black/30
-  `
+    class={`
+      absolute top-0 h-full w-full
+      bg-gradient-to-b from-black/10 to-black/30
+      ${animation} group-hover:bg-black/30
+    `}
   >
   </div>
+
+  <!-- content-center tested and removed; no visual effect in this layout -->
   <div
-    class=`
-    absolute flex flex-col bottom-0 w-full 
-    translate-y-[calc(100%-7.5rem)] group-hover:translate-y-0
-    content-center
-    ${animation}
-    `
+    class={`
+      absolute bottom-0 flex w-full flex-col
+      translate-y-[calc(100%-7.5rem)] group-hover:translate-y-0
+      ${animation}
+    `}
   >
-    <div class=`m-6 text-white ${animation}`>
+    <div class={`m-6 text-white ${animation}`}>
       <Title3 className="mb-0">
         {title}
       </Title3>
     </div>
+
     <div
-      class=`self-baseline m-6 opacity-0 group-hover:opacity-100 ${animation}`
+      class={`
+        m-6 self-baseline opacity-0
+        group-hover:opacity-100 ${animation}
+      `}
     >
-      <div class="text-md text-white">
+      <div class="text-base text-white">
         {description}
       </div>
     </div>

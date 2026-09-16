@@ -14,7 +14,7 @@ export interface Props {
 const { className } = Astro.props;
 ---
 
-<section id="about" class=`${className}`>
+<section id="about" class=`scroll-mt-24 ${className}`>
   <Container
     className="mx-auto flex flex-col items-center justify-center text-center"
   >
@@ -48,9 +48,7 @@ const { className } = Astro.props;
             aboutSMNLSection.howWeAddValue.points.map((point) => (
               <div>
                 <Title3>{point.title}</Title3>
-                <Paragraph className="mt-2">
-                  {point.description}
-                </Paragraph>
+                <Paragraph className="mt-2">{point.description}</Paragraph>
               </div>
             ))
           }
