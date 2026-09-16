@@ -1,7 +1,5 @@
 ---
-import Container from "../components/shared/Container.astro";
 import Navitem from "../components/shared/Navitem.astro";
-import BtnLink from "../components/shared/BtnLink.astro";
 import BtnThemeSwitch from "../components/shared/BtnThemeSwitch.astro";
 import smnlLogo from "../components/sections/hero/assets/smnl-logo-01.webp";
 
@@ -29,14 +27,16 @@ const navItems = [
 ];
 ---
 
-<header class="absolute inset-x-0 top-0 z-50 py-6 px-6">
+<header
+  class="fixed inset-x-0 top-0 z-50 py-3 px-6 bg-base dark:bg-base-dark border-b border-border-light dark:border-base-dark-700"
+>
   <!-- <Container> -->
   <nav class="w-full flex justify-between gap-6 relative">
     <!-- logo -->
     <div class="min-w-max inline-flex relative">
       <!-- LOGO -->
       <a href="/" class="relative flex items-center gap-3">
-        <img src={smnlLogo.src} alt="SMNL" class="h-16 w-auto" />
+        <img src={smnlLogo.src} alt="SMNL" class="h-14 w-auto" />
       </a>
     </div>
 
@@ -51,7 +51,7 @@ const navItems = [
       class="flex h-0 overflow-hidden lg:!h-auto lg:scale-y-100 duration-300 ease-linear flex-col gap-y-6 gap-x-4 lg:flex-row w-full lg:justify-between lg:items-center absolute lg:relative top-full lg:top-0 bg-body lg:bg-transparent border-x border-x-box-border lg:border-x-0"
     >
       <ul
-        class="border-t border-box-border lg:border-t-0 px-6 lg:px-0 pt-6 lg:pt-0 flex flex-col lg:flex-row gap-y-4 gap-x-5 text-lg text-heading-2 w-full lg:justify-end lg:items-center"
+        class="border-t border-box-border lg:border-t-0 px-6 lg:px-0 pt-6 lg:pt-0 flex flex-col lg:flex-row gap-y-4 gap-x-4 text-lg text-heading-2 w-full lg:justify-end lg:items-center"
       >
         {
           navItems.map((item) => {
@@ -66,7 +66,7 @@ const navItems = [
       >
         <a
           href="#cta"
-          class="scroll-mt-24 inline-flex items-center justify-center w-full sm:w-max min-w-max rounded-lg px-6 py-3 border border-transparent bg-primary-500 text-white font-semibold text-lg outline-none relative overflow-hidden duration-300 ease-linear hover:bg-primary-600 active:bg-primary-700"
+          class="inline-flex items-center justify-center w-full sm:w-max min-w-max rounded-lg px-6 py-3 border border-transparent bg-primary-500 text-white font-semibold text-lg outline-none relative overflow-hidden duration-300 ease-linear hover:bg-primary-600 active:bg-primary-700"
         >
           Contact Us
         </a>

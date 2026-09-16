@@ -2,6 +2,7 @@
 dist/
 # generated types
 .astro/
+.vscode/
 
 # dependencies
 node_modules/
@@ -12,6 +13,12 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 
+# README.md from Green Energy Astro Template
+README_0.md
+
+# Custom assets
+# public/favicon.svg
+# public/robots.txt
 
 # environment variables
 .env
