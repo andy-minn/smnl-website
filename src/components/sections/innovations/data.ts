@@ -12,10 +12,10 @@ export const innovationsSection = {
     {
       title: "Interior Decoration Materials",
       description:
-        "We source MDF Board, Plywood and BlockBoard from suppliers in Indonesia, Malaysia, Thailand and China for customers in Myanmar, according to their product requirements.",
+        "We source MDF Board, Plywood and BlockBoard from suppliers in Indonesia, Malaysia, Thailand and China, as well as HPL Laminates from Singapore and Composite Wood from Indonesia, for customers in Myanmar according to their product requirements.",
       visual: imgGrid,
       imageAlt:
-        "Interior decoration materials including MDF Board, Plywood and BlockBoard",
+        "Interior decoration materials including MDF Board, Plywood, BlockBoard, HPL Laminates and Composite Wood",
     },
     {
       title: "Agricultural Products",

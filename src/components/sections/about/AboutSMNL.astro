@@ -6,6 +6,7 @@ import SubTitle2 from "../../shared/SubTitle2.astro";
 import Title2 from "../../shared/Title2.astro";
 import Title3 from "../../shared/Title3.astro";
 import { aboutSMNLSection } from "./data.ts";
+import imgAbout from "./assets/img_about.webp";
 
 export interface Props {
   className?: string;
@@ -14,50 +15,79 @@ export interface Props {
 const { className } = Astro.props;
 ---
 
-<section id="about" class=`scroll-mt-24 ${className}`>
-  <Container
-    className="mx-auto flex flex-col items-center justify-center text-center"
-  >
-    <Title2>{aboutSMNLSection.title}</Title2>
-
-    <SubTitle2>
-      {aboutSMNLSection.subheading1_1}
-      <GradiantText>{aboutSMNLSection.subheading1_2}</GradiantText>
-    </SubTitle2>
-
-    <Paragraph className="max-w-3xl mt-6">
-      {aboutSMNLSection.description}
-    </Paragraph>
+<section id="about" class={`scroll-mt-24 ${className ?? ""}`}>
+  <!-- About Us -->
+  <Container>
+    <div class="flex flex-col items-center justify-center text-center">
+      <Title2>{aboutSMNLSection.title}</Title2>
+    </div>
   </Container>
 
+  <!-- Main About Us Content -->
   <Container className="mt-12">
-    <div class="grid lg:grid-cols-2 gap-8 lg:gap-12">
-      <div class="rounded-xl p-8 bg-box-bg ring-1 ring-black/5">
-        <Title3>{aboutSMNLSection.whatWeDo.title}</Title3>
-
-        <Paragraph className="mt-4">
-          {aboutSMNLSection.whatWeDo.description}
-        </Paragraph>
+    <div class="grid items-stretch gap-8 lg:grid-cols-2 lg:gap-12">
+      <!-- About Us Image -->
+      <div class="min-h-[320px] overflow-hidden rounded-lg lg:min-h-[500px]">
+        <img
+          src={imgAbout.src}
+          alt="International trade, shipping and materials"
+          class="h-full min-h-[320px] w-full object-cover lg:min-h-[500px]"
+          loading="lazy"
+        />
       </div>
 
-      <div class="rounded-xl p-8 bg-box-bg ring-1 ring-black/5">
-        <Title3>{aboutSMNLSection.howWeAddValue.title}</Title3>
+      <!-- About Us Text -->
+      <div class="flex flex-col justify-center">
+        <SubTitle2>
+          {aboutSMNLSection.subheading1_1}
+          <GradiantText>{aboutSMNLSection.subheading1_2}</GradiantText>
+        </SubTitle2>
 
-        <div class="mt-6 space-y-6">
-          {
-            aboutSMNLSection.howWeAddValue.points.map((point) => (
-              <div>
-                <Title3>{point.title}</Title3>
-                <Paragraph className="mt-2">{point.description}</Paragraph>
-              </div>
-            ))
-          }
+        <Paragraph className="mt-6">
+          {aboutSMNLSection.description}
+        </Paragraph>
+
+        <!-- What We Do -->
+        <div class="mt-8">
+          <Title3>{aboutSMNLSection.whatWeDo.title}</Title3>
+
+          <Paragraph className="mt-3">
+            {aboutSMNLSection.whatWeDo.description}
+          </Paragraph>
         </div>
       </div>
     </div>
+  </Container>
 
-    <div class="max-w-3xl mx-auto mt-10 text-center">
-      <Paragraph className="font-medium">
+  <!-- How We Add Value -->
+  <Container className="mt-16">
+    <Title3 className="text-center">
+      {aboutSMNLSection.howWeAddValue.title}
+    </Title3>
+
+    <div class="mt-8 grid grid-cols-1 gap-6 md:grid-cols-3 lg:gap-8">
+      {
+        aboutSMNLSection.howWeAddValue.points.map((point) => (
+          <div class="group h-full flex flex-col rounded-lg bg-white dark:bg-base-dark-800 p-6 md:p-8 shadow-lg dark:shadow-dark ring-1 ring-black/5 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
+            <div class="flex flex-col gap-4">
+              <Title3 className="dark:opacity-70">{point.title}</Title3>
+
+              <Paragraph>{point.description}</Paragraph>
+            </div>
+          </div>
+        ))
+      }
+    </div>
+  </Container>
+
+  <!-- Closing Statement -->
+  <Container className="mt-12">
+    <div
+      class="rounded-xl bg-box-bg px-8 py-10 text-center shadow-sm ring-1 ring-black/5 dark:ring-white/5"
+    >
+      <div class="mx-auto mb-4 h-1 w-12 rounded-full bg-primary-500"></div>
+
+      <Paragraph className="mx-auto max-w-3xl font-medium">
         {aboutSMNLSection.closingStatement}
       </Paragraph>
     </div>

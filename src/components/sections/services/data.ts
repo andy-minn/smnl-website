@@ -1,9 +1,10 @@
-import img1 from "./assets/MDF-01.webp";
-import img2 from "./assets/Plywood-03.webp";
-import img3 from "./assets/BlockBoard-02.webp";
-import img4 from "./assets/rice-02.webp";
-import img5 from "./assets/Beans-01.webp";
-import img6 from "./assets/trade-hub-02.webp";
+import img1 from "./assets/MDF_001.webp";
+import img2 from "./assets/Plywood_07.webp";
+import img3 from "./assets/BlockBoard_005.webp";
+import img4 from "./assets/hpl_006.webp";
+import img5 from "./assets/wpc_009.webp";
+import img6 from "./assets/rice-02.webp";
+import img7 from "./assets/Beans-01.webp";
 
 export const servicesSectionData = {
   title: "What We Trade",
@@ -19,11 +20,12 @@ export const servicesSectionData = {
     {
       title: "MDF Board",
       briefDescription:
-        "Sourced from trusted suppliers for customers in the interior decoration materials market.",
+        "Sourced from trusted suppliers for customers in Myanmar's interior decoration materials market.",
       visual: img1,
       imageAlt:
         "MDF Board panels for interior decoration and building applications",
     },
+
     {
       title: "Plywood",
       briefDescription:
@@ -32,6 +34,7 @@ export const servicesSectionData = {
       imageAlt:
         "Plywood panels for interior decoration and building applications",
     },
+
     {
       title: "BlockBoard",
       briefDescription:
@@ -40,28 +43,39 @@ export const servicesSectionData = {
       imageAlt:
         "BlockBoard panels for interior decoration and building applications",
     },
+
+    {
+      title: "HPL Laminates",
+      briefDescription:
+        "Sourced from Singapore for customers in Myanmar's interior decoration materials market.",
+      visual: img4,
+      imageAlt:
+        "HPL Laminates for interior decoration and surface applications",
+    },
+
+    {
+      title: "Composite Wood",
+      briefDescription:
+        "Sourced from Indonesia for customers in Myanmar's interior decoration materials market.",
+      visual: img5,
+      imageAlt:
+        "Composite Wood materials for interior decoration and building applications",
+    },
+
     {
       title: "Rice",
       briefDescription:
-        "Sourced from Myanmar and coordinated for export to customers across regional markets.",
-      visual: img4,
-      imageAlt:
-        "Rice prepared as an agricultural commodity for regional export",
+        "Sourced from Myanmar for customers across regional markets.",
+      visual: img6,
+      imageAlt: "Rice as an agricultural commodity for regional export",
     },
+
     {
       title: "Beans",
       briefDescription:
         "Sourced from Myanmar for customers in international markets.",
-      visual: img5,
-      imageAlt:
-        "Beans prepared as an agricultural commodity for international trade",
-    },
-    {
-      title: "Trading Coordination",
-      briefDescription:
-        "Coordinating product specifications, cross-border payments, transportation and delivery.",
-      visual: img6,
-      imageAlt: "Singapore trading coordination and cross-border logistics",
+      visual: img7,
+      imageAlt: "Beans as an agricultural commodity for international trade",
     },
   ],
 

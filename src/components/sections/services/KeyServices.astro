@@ -12,17 +12,21 @@ export interface Props {
 const { className } = Astro.props;
 ---
 
-<section id="services" class=`scroll-mt-24 ${className}`>
+<section id="services" class={`scroll-mt-24 ${className}`}>
   <Container size="wide">
     <Title2>{servicesSectionData.title}</Title2>
   </Container>
+
   <Container size="wide">
-    <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-y-2 gap-x-4">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-y-3 gap-x-3">
+      <!-- Introductory Text — spans 2 columns -->
       <ServiceCopyTextCard
         className="md:col-span-2 flex flex-col"
         subheading={servicesSectionData.subheading}
       />
-      <div class="">
+
+      <!-- MDF Board -->
+      <div>
         <ServiceCard
           title={servicesSectionData.services[0].title}
           description={servicesSectionData.services[0].briefDescription}
@@ -30,7 +34,9 @@ const { className } = Astro.props;
           imageAlt={servicesSectionData.services[0].imageAlt}
         />
       </div>
-      <div class="">
+
+      <!-- Plywood -->
+      <div>
         <ServiceCard
           title={servicesSectionData.services[1].title}
           description={servicesSectionData.services[1].briefDescription}
@@ -38,7 +44,9 @@ const { className } = Astro.props;
           imageAlt={servicesSectionData.services[1].imageAlt}
         />
       </div>
-      <div class="">
+
+      <!-- BlockBoard -->
+      <div>
         <ServiceCard
           title={servicesSectionData.services[2].title}
           description={servicesSectionData.services[2].briefDescription}
@@ -46,7 +54,9 @@ const { className } = Astro.props;
           imageAlt={servicesSectionData.services[2].imageAlt}
         />
       </div>
-      <div class="">
+
+      <!-- HPL Laminates -->
+      <div>
         <ServiceCard
           title={servicesSectionData.services[3].title}
           description={servicesSectionData.services[3].briefDescription}
@@ -54,7 +64,9 @@ const { className } = Astro.props;
           imageAlt={servicesSectionData.services[3].imageAlt}
         />
       </div>
-      <div class="">
+
+      <!-- Composite Wood -->
+      <div>
         <ServiceCard
           title={servicesSectionData.services[4].title}
           description={servicesSectionData.services[4].briefDescription}
@@ -62,12 +74,24 @@ const { className } = Astro.props;
           imageAlt={servicesSectionData.services[4].imageAlt}
         />
       </div>
-      <div class="">
+
+      <!-- Rice -->
+      <div>
         <ServiceCard
           title={servicesSectionData.services[5].title}
           description={servicesSectionData.services[5].briefDescription}
           visual={servicesSectionData.services[5].visual}
           imageAlt={servicesSectionData.services[5].imageAlt}
+        />
+      </div>
+
+      <!-- Beans -->
+      <div>
+        <ServiceCard
+          title={servicesSectionData.services[6].title}
+          description={servicesSectionData.services[6].briefDescription}
+          visual={servicesSectionData.services[6].visual}
+          imageAlt={servicesSectionData.services[6].imageAlt}
         />
       </div>
     </div>
