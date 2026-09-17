@@ -14,7 +14,7 @@ export const getInvolvedSection = {
 
   emailAddress: "inquiry@sinmanayla.com",
   phoneNumber: "+65 6269 7381",
-  whatsappNumber: "+65 8118 9628",
+  whatsappNumber: "+65 8337 3927",
 
   location: "Singapore",
   addressLine1: "27 Penjuru Lane",
