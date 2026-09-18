@@ -1,5 +1,5 @@
 import img1 from "./assets/MDF_001.webp";
-import img2 from "./assets/Plywood_07.webp";
+import img2 from "./assets/Plywood_05.webp";
 import img3 from "./assets/BlockBoard_005.webp";
 import img4 from "./assets/hpl_006.webp";
 import img5 from "./assets/wpc_009.webp";
